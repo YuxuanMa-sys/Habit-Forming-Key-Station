@@ -1,20 +1,17 @@
-# Safety Suite For Electric Longboard
+# Habit Forming Key Station
 
-The goal of the project is to increase safety for electric longboard users by electronically preventing wheel slippage and automatically stopping the board if the user is ejected.
+# Problem
+
+People have a difficult time building habits. Specifically, a common issue that many have is losing or misplacing their keys/wallet whenever they enter their place of residence. If they were accustomed to placing and grabbing their keys from a specific designated location, then the likelihood of losing their keys and wallet would be significantly low.
+
+# Solution
+
+Our solution utilizes negative reinforcement to build positive habits for its users. We will build a designated station for placing one’s keys, or any small item of their choosing, when entering or leaving their home. It will begin detecting the proximity of the keys a few minutes after the keys have initially been removed from the dish, indicating the resident is not home. Once the resident returns home with the keys, a sensor should detect its presence with an RFID tag and continue ringing an alarm through a speaker until the keys are placed correctly. There will be a pressure sensor at the bottom of the dish that will indicate whether the keys have been put into the device. Our solution will have 5 subsystems: proximity detection, control and processing, alarm, confirmation, and power. 
 
 Team members:
 
-- [Pouya Akbarzadeh](https://github.com/OfficialPouya)
-- [Alexander Krysl](https://github.com/axkrysl47)
-- [Patrick Stach](https://github.com/pat-stach)
+- [Ali Husain]
+- [Cedric Mathew]
+- [Marsh Ma]
 
-## Results
 
-[Demo](https://www.youtube.com/playlist?list=PLA1k06jt2lX-8_wawuwcJB9zIEW_f2nJa)
-
-[Presentation](https://www.youtube.com/watch?v=MWs525hmZTg)
-
-![](results1.jpeg)
-![](results2.jpeg)
-
-Original project repo located [here](https://github.com/OfficialPouya/Safety_Suite_For_Electric_Longboard).
