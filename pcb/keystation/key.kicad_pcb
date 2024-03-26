@@ -1868,7 +1868,7 @@
 
   (gr_rect (start 96.52 40.64) (end 162.56 96.52)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp d65e5897-eee7-4551-8262-ec498564d65f))
-  (gr_text "PCB V1\n2024-03-18\nTeam 17" (at 109.22 48.26) (layer "F.SilkS") (tstamp ea7db268-5ba7-4b37-9e3a-19c9adb2e0ce)
+  (gr_text "PCB V2\n2024-03-18\nTeam 17" (at 109.22 48.26) (layer "F.SilkS") (tstamp ea7db268-5ba7-4b37-9e3a-19c9adb2e0ce)
     (effects (font (size 1 1) (thickness 0.15)) (justify bottom))
   )
   (dimension (type aligned) (layer "F.SilkS") (tstamp 05d01e85-6a58-4220-879f-f8034759a755)
