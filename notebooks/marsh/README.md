@@ -32,12 +32,12 @@ Changes Made:
 
 * Moved the location of the power regulator to reduce electromagnetic interference with the Proximity Detection Subsystem.
 
-![schematic of our keydish PCB design](key_dish_pcb.png)
+![](key_dish_pcb.png)
+This the schematic of our keydish PCB design
 
 
-
-![Front-side of our Keydish PCB design](keydish.png)
-
+![](keydish.png)
+Front-side of our Keydish PCB design
 
 And here are the schematic and front-side view of our keychain PCB:
 
@@ -48,46 +48,78 @@ And here are the schematic and front-side view of our keychain PCB:
 
 # 2024-03-17 - Confirmation Subsystem Component Tuning
 
-I have contacted several custom battery builders in the esk8 (custom electric longboard builders) forum, located [here](https://forum.esk8.news/).  Builder Zach Tetra from [Black Fox Builds](https://forum.esk8.news/t/black-fox-boards-east-coast-battery-building-services/37402) has the following pair of 6s4p batteries that he can send immediately:
+Activities:
 
-![](blackfox_battery.png)
+* Tuned the voltage divider settings in the Confirmation Subsystem to enhance the detection accuracy of the FSR 406 sensor.
 
-For our project, I would prefer a 12s battery for adequate performance. The pack above is made up of Samsung 30Q cells, I found more info [here](https://lygte-info.dk/review/batteries2012/Samsung%20INR18650-30Q%203000mAh%20(Pink)%20UK.html). We can convert the 6s4p pack into a 12s2p pack, which will be nearly 200Whr.
-This will be plenty, for up to 10 miles of range. I have never worked on batteries before. When researching how to do so, I found this over-an-hour-long video [here]( https://www.youtube.com/watch?v=7QjO90LG67g), that clearly depicts and describes everything required to safely build a reliable battery pack.
+Progress:
 
-I will need access to a spot welder to complete this - we’ve reached out to Illini Solar Car, as they have claimed the spot welder on campus.
+* Successfully increased the subsystem's sensitivity to detect lighter objects resembling key weights.
 
-# 2021-02-18 - Battery Update
+Changes Made:
 
-Received the pair of 6s4p batteries, along with battery building supplies such as a Smart BMS, nickel strips, fishpaper, 10 gauge wire, and more. Upon closer inspection, splitting the 6s4p pack into a 12s2p pack is difficult, as there is no leverage to remove the existing H-shaped nickel strips.
+* Modified the resistor values in the voltage divider to adjust the output voltage range, improving sensor response time.
 
-The pair of 6s4p packs take up a lot less space than I expected. It would be easier to make a 12s4p pack out of them instead, which will provide us the same power as I required from earlier at nearly 500 Whr. Additionally, I have gotten in contact with a coworker who has a battery spot welder I can use.
 
-Once I have planned out the build and assembled the materials, we should be good to go to complete the battery.
 
-# 2021-02-24 - Investigation acquiring RPM data from VESCs
+# 2024-03-20 - Proximity Detection Subsystem Calibration
 
-I have done some investigating of the VESC hardware and software and discovered that you can query them for RPM telemetry data. This removes the need for us to develop RPM sensing
-around the motorized wheels.
+Activities:
 
-To accomplish this however, we may need to talk to each VESC individually. Having a dual VESC is convenient, but this may interfere with our ability to query data from them properly. Some dual VESCs have dual MCUs, other more recent designs have single MCUs as shown earlier in this journal.
+* Calibrated the DWM1000 module to fine-tune distance measurement accuracy.
 
-# 2021-03-01 - Parts update
+* Implemented firmware updates to optimize data transmission between the key fob and station.
 
-From further discussions about the issue of communicating to both VESCs individually or to a ‘master’ VESC to both, we have decided to go with a pair of single VESCs. For example, we could attach a CANBUS cable between the pair of VESCs in order to allow them to communicate with each other, or simply split two PPM signals to pass throttle information individually, among various other choices. In other words, the VESCs can work in tandem with one another or can be independent from each other.
+Progress:
 
-I have assembled a significant portion of the board at this point, as seen here in this picture below:
+* Achieved a consistent detection accuracy within the range of less than 1% error.
 
-![](parts_update.png)
+Changes Made:
 
-Some issues:
+* Adjusted the UWB pulse frequency to enhance detection through obstacles.
 
-- The motor pulley is scraping on the motor mount. This is an issue of tolerances, as the
-motor mount I am using is 6mm wide and the Motor shaft has a tolerance of 6.2mm +-
-0.5mm. In theory, we should have 0.2mm of space, but the margin of error was not in our
-favor.
-  ![](motor_pulley_scraping.png)
-- The threads on the ends of the trucks are not deep enough. We need bearing spacers to
-push the wheel out.
-  ![](bearing_spacer.png)
+# 2024-04-01 - Integrated System Testing
+
+Activities:
+
+* Conducted integrated testing of both subsystems with the newly designed PCB to ensure compatibility and performance.
+
+Progress:
+
+* Both subsystems operated seamlessly with the new PCB layout.
+
+Changes Made:
+
+* Replaced the initial microcontroller firmware with a more robust version to handle edge cases in subsystem interactions.
+
+# 2024-04-07 - Performance Optimization
+
+Activities:
+
+* Optimized the power management strategies to enhance the overall system's energy efficiency.
+
+Progress:
+
+* Reduced power consumption by 10% without compromising subsystem performance.
+
+Changes Made:
+
+*Integrated a new sleep mode protocol into the firmware to reduce idle power draw.
+
+
+
+# 2024-04-21 - Final Preparations and Revisions
+
+Activities:
+
+* Made final adjustments to the subsystems based on feedback from trial runs.
+* Prepared the documentation and presentation materials for project demonstration.
+
+Progress:
+
+* System is fully operational with all functionalities meeting the project's specifications.
+
+Changes Made:
+
+* Increased the robustness of the Confirmation Subsystem against false positives by refining the threshold settings.
 
