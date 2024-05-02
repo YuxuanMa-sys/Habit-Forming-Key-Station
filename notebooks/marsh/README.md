@@ -51,8 +51,12 @@ And here are the schematic and front-side view of our keychain PCB:
 
 
 We are using [FSR 406](https://www.interlinkelectronics.com/fsr-406) as our pressure sensor. 
+
 [operational amplifier](https://www.ti.com/lit/ds/symlink/lm741.pdf)
+
 [MOSFET](https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/IRF540N.pdf)
+
+![](circuit.png)
 
 ![](sensor_layout.png)
 
@@ -72,7 +76,7 @@ Technical Insights:
 
 Circuit Integration:
 
-* To further enhance the signal processing, an [operational amplifier (op-amp)] was added to the circuit. This op-amp serves to amplify the voltage output from the voltage divider, providing a stronger and more stable signal for the microcontroller to process.
+* To further enhance the signal processing, an operational amplifier (op-amp) was added to the circuit. This op-amp serves to amplify the voltage output from the voltage divider, providing a stronger and more stable signal for the microcontroller to process.
 * A MOSFET was incorporated to act as a switch controlled by the output voltage from the op-amp. This setup allows the circuit to trigger other system actions, such as turning off an alert or activating a status LED, once the keys are detected on the sensor.
 
 Progress:
@@ -161,4 +165,6 @@ Progress:
 Changes Made:
 
 * Increased the robustness of the Confirmation Subsystem against false positives by refining the threshold settings.
+
+![](design.png)
 
