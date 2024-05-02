@@ -2,9 +2,21 @@
 
 [[_TOC_]]
 
-# 2021-02-05 - Discussion with Professor Schuh
+# 2024-03-05 - Initial PCB Design
 
-Professor Schuh gave us the idea to use piezo resistors or Velostat to perform the weight/pressure sensing that we need. Additionally, the tilt sensing probably won’t be necessary - we can correspond the rear left wheel with the front left wheel and rear right wheel with the front right wheel, as those pairs of wheels should be spinning at roughly the same velocity during turning. This simplifies our design.
+Activities:
+
+*Began initial design of the PCB tailored for supporting both subsystems.
+*Selected and placed components on the schematic, focusing on a compact and efficient layout.
+
+Progress:
+
+*Completed the initial draft of the PCB schematic.
+
+Changes Made:
+
+*Switched from using a general-purpose microcontroller to a more power-efficient model better suited for real-time processing requirements.
+
 
 # 2021-02-10 - Parts Updates
 
