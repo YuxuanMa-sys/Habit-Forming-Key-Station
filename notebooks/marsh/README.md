@@ -6,46 +6,45 @@
 
 Activities:
 
-*Began initial design of the PCB tailored for supporting both subsystems.
-*Selected and placed components on the schematic, focusing on a compact and efficient layout.
+* Began initial design of the PCB tailored for supporting both subsystems.
+* Selected and placed components on the schematic, focusing on a compact and efficient layout.
 
 Progress:
 
-*Completed the initial draft of the PCB schematic.
+* Completed the initial draft of the PCB schematic.
 
 Changes Made:
 
-*Switched from using a general-purpose microcontroller to a more power-efficient model better suited for real-time processing requirements.
+* Switched from using a general-purpose microcontroller to a more power-efficient model better suited for real-time processing requirements.
 
 
-# 2021-02-10 - Parts Updates
+# 2021-03-10 - PCB Layout Adjustments
 
-Currently, I am looking at Dual VESC options that can simplify our design, minimize space.
-Here are some examples:
+Activities:
 
-![](esc1.png)
+* Adjusted the PCB layout to optimize the routing of traces for power distribution and signal integrity.
 
-[link](https://flipsky.net/collections/electronic-products/products/dual-fsesc6-6-based-upon-vesc6-with-aluminum-heatsink)
+Progress:
 
-This one has dual MCUs, with a physical switch to include or disclude the CAN connection
-between both of the VESCs.
+* Identified optimal trace widths and clearances to minimize noise and cross-talk between high-frequency components.
 
-![](esc2.png)
+Changes Made:
 
-[link](https://massivestator.com/products/focbox-unity-dual-motor-controller)
+* Moved the location of the power regulator to reduce electromagnetic interference with the Proximity Detection Subsystem.
 
-This one has a single MCU that acts for both motors.
+![](key_dish_pcb.png)
+This the schematic of our keydish PCB design
 
-I am currently speaking with Loaded Boards, a longboard deck and skateboard wheel company that Boosted had a business relationship with. They are willing to send a B-grade deck and wheels at a lower price. Wheel durometer options are 77a, 80a, 83a. The lower the durometer number, the softer the
-wheel urethane.
 
-After discussions with the team, we decided on the hardest wheel option, 83a, as it would slip easier than the softer wheels. We want to make sure we can demonstrate traction control in our project.
+![](keydish.png)
+Front-side of our Keydish PCB design
 
-For weight sensing, I also came across a flexiforce sensor that we may consider using. The board will weigh about 20 pounds, we ideally would like a range of double that. This flexiforce sensor is high on my list.
+And here are the schematic and front-side view of our keychain PCB:
 
-![](flexiforce.png)
+![](keychain_pcb.png)
+![](keychain.png)
 
-[link](https://www.tekscan.com/products-solutions/force-sensors/a401?tab=specifications-performance)
+
 
 # 2021-02-12 - Acquiring a Battery
 
