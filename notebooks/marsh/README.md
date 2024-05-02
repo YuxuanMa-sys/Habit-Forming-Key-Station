@@ -1,6 +1,15 @@
 # Marsh's Project Working Log: Habit Forming Key Station
 
-[[_TOC_]]
+## Table of Contents
+
+1. [Initial PCB Design](#2024-03-05---initial-pcb-design)
+2. [PCB Layout Adjustments](#2024-03-10---pcb-layout-adjustments)
+3. [Confirmation Subsystem Component Tuning](#2024-03-27---confirmation-subsystem-component-tuning)
+4. [Proximity Detection Subsystem Calibration](#2024-04-10---proximity-detection-subsystem-calibration)
+5. [Integrated System Testing](#2024-04-15---integrated-system-testing)
+6. [Performance Optimization](#2024-04-19---performance-optimization)
+7. [Final Preparations and Revisions](#2024-04-21---final-preparations-and-revisions)
+
 
 # 2024-03-05 - Initial PCB Design
 
@@ -46,7 +55,7 @@ And here are the schematic and front-side view of our keychain PCB:
 
 
 
-# 2024-03-17 - Confirmation Subsystem Component Tuning
+# 2024-03-27 - Confirmation Subsystem Component Tuning
 
 
 
@@ -100,7 +109,7 @@ Next Steps:
 
 
 
-# 2024-03-20 - Proximity Detection Subsystem Calibration
+# 2024-04-10 - Proximity Detection Subsystem Calibration
 
 Activities:
 
@@ -121,7 +130,7 @@ To test the transcievers using arduino and breadboard, I designed an adaptor boa
 ![](adapter.png)
 ![](adapter_pcb.png)
 
-# 2024-04-01 - Integrated System Testing
+# 2024-04-15 - Integrated System Testing
 
 Activities:
 
@@ -135,7 +144,7 @@ Changes Made:
 
 * Replaced the initial microcontroller firmware with a more robust version to handle edge cases in subsystem interactions.
 
-# 2024-04-07 - Performance Optimization
+# 2024-04-19 - Performance Optimization
 
 Activities:
 
