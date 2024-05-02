@@ -18,7 +18,7 @@ Changes Made:
 * Switched from using a general-purpose microcontroller to a more power-efficient model better suited for real-time processing requirements.
 
 
-# 2021-03-10 - PCB Layout Adjustments
+# 2024-03-10 - PCB Layout Adjustments
 
 Activities:
 
@@ -32,12 +32,12 @@ Changes Made:
 
 * Moved the location of the power regulator to reduce electromagnetic interference with the Proximity Detection Subsystem.
 
-![](key_dish_pcb.png)
-This the schematic of our keydish PCB design
+![schematic of our keydish PCB design](key_dish_pcb.png)
 
 
-![](keydish.png)
-Front-side of our Keydish PCB design
+
+![Front-side of our Keydish PCB design](keydish.png)
+
 
 And here are the schematic and front-side view of our keychain PCB:
 
@@ -46,7 +46,7 @@ And here are the schematic and front-side view of our keychain PCB:
 
 
 
-# 2021-02-12 - Acquiring a Battery
+# 2024-03-17 - Confirmation Subsystem Component Tuning
 
 I have contacted several custom battery builders in the esk8 (custom electric longboard builders) forum, located [here](https://forum.esk8.news/).  Builder Zach Tetra from [Black Fox Builds](https://forum.esk8.news/t/black-fox-boards-east-coast-battery-building-services/37402) has the following pair of 6s4p batteries that he can send immediately:
 
