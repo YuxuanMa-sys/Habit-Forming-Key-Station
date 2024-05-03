@@ -107,7 +107,8 @@ This lab notebook documents the design, development, and testing of the Habit Fo
 
 **Activities:**
 - Completed the integration of the control and processing subsystem with the proximity detection and alarm subsystems.
-- Prepared and rehearsed the mid-term presentation, focusing on design choices and preliminary testing results.
+- Found transceiver issues with ranging library. Needed to do further testing to confirm this.
+
 
 **Achievements:**
 - Successfully demonstrated a working prototype during the mid-term review, receiving positive feedback and constructive critiques.
