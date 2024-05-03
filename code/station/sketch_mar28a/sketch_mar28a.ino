@@ -201,7 +201,7 @@ void loop() {
         }
         
         // This is a barrier that allows the waiting state to wait X seconds after detecting the keys in the radius before switching to the alarm state
-        if(current_time - timestamp < 5000){
+        if(current_time - timestamp < 10000){
           break;
         }
 
@@ -236,10 +236,6 @@ void loop() {
         digitalWrite(ALARM_DEBUG, LOW);
         timestamp = millis();
         systemState = TIMER;
-        break;
-      }else if (distance > DETECTION_RADIUS){
-        digitalWrite(ALARM_DEBUG, LOW);
-        systemState = WAITING;
         break;
       }
       break;
